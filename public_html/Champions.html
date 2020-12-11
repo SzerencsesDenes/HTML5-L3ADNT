@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TFT Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+            body{
+                font-family: "Work sans";
+                height: 100vh;
+                min-height: 100vh
+            }
+            .f-grow-0{flex-grow: 0}
+            .f-grow-1{flex-grow: 1}
+
+            .logo{
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex flex-column h-100">
+            <section class="d-flex f-grow-0 justify-content-start align-items-center bg-info">
+                <div> <img class="logo" src="https://p7.hiclipart.com/preview/1016/1000/897/league-of-legends-computer-icons-ongamenet-starleague-video-game-electronic-sports-voice-actor.jpg"> </div>
+                <div>
+                    <a class="btn" href="index.html" role="button">Home</a>
+                    <a class="btn" href="Champions.html" role="button">Champions</a>
+                    <a class="btn" href="Items.html" role="button">Items</a>
+                </div>
+                <div>
+                    <a class="btn" href="Login.html" role="button">Login</a>
+                </div>
+            </section>
+            <section class="d-flex f-grow-1 bg-light">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#Aatrox">Aatrox</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Ahri</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Akali</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Annie</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Aphelios</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">Ashe</a>
+                </div>
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                    <h4 id="Aatrox">Aatrox</h4>
+                    <p>Infernal Chains</p>
+                    <p>After a brief delay, Aatrox pulls in the farthest enemies then slams the ground, dealing magic damage to all adjacent enemies.</p>
+                    <p>Damage: 250 / 450 / 1250</p>
+                    <p>Traits: Cultist | Vanguard</p>
+                    <h4 id="list-item-2">Ahri</h4>
+                    <p>Spirit Bomb</p>
+                    <p>Ahri channels, summoning a large ball of spirit energy. After 1.5 seconds, she lobs it at her target dealing magic damage to all enemies within 2 hexes.</p>
+                    <p>Damage: 500 / 700 / 3000</p>
+                    <p>Traits: Spirit | Mage</p>
+                    <h4 id="list-item-3">Akali</h4>
+                    <p>Five-Point Strike</p>
+                    <p>Akali throws kunai at her target, dealing magic damage.</p>
+                    <p>Damage: 175 / 250 / 400</p>
+                    <p>Traits: Assassin | Ninja</p>
+                    <h4 id="list-item-4">Annie</h4>
+                    <p>Shield-Blast</p>
+                    <p>Annie blasts a cone of fire dealing magic damage to enemies in front of her, then creates a shield for herself for a few seconds.</p>
+                    <p>Damage: 250 / 400 / 600 | Shield amount: 500 / 700 / 900</p>
+                    <p>Traits: Fortune | Mage</p>
+                    <h4 id="list-item-5">Aphelios</h4>
+                    <p>Sentry Turret</p>
+                    <p>Aphelios summons a turret for a few seconds. An extension of his will, the turret counts as Aphelios himself when it fires and deals damage, and dies when he dies.</p>
+                    <p>Duration: 7 / 8 / 9 / 11</p>
+                    <p>Traits: Moonlight | Hunter</p>
+                    <h4 id="list-item-6">Ashe</h4>
+                    <p>Hunter's Focus</p>
+                    <p>Ashe gains Attack Speed for 5 seconds, and her Basic Attacks fire a flurry of arrows dealing physical damage.</p>
+                    <p>Damage Per Arrow: 45% / 45% / 45% | Attack speed: 45% / 65% / 300%</p>
+                    <p>Traits: Elderwood | Hunter</p>
+                </div>
+            </section>
+            <section class="d-flex f-grow-0 bg-info align-items-center">
+                <p>KMOOC HTML5 gyakorlás | Szerencsés Dénes | 2020</p>
+            </section>
+        </div>
+    </body>
+</html>

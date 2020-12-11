@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TFT Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+            body{
+                font-family: "Work sans";
+                height: 100vh;
+                min-height: 100vh
+            }
+            .f-grow-0{flex-grow: 0}
+            .f-grow-1{flex-grow: 1}
+
+            .logo{
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex flex-column h-100">
+            <section class="d-flex f-grow-0 justify-content-start align-items-center bg-info">
+                <div> <img class="logo" src="https://p7.hiclipart.com/preview/1016/1000/897/league-of-legends-computer-icons-ongamenet-starleague-video-game-electronic-sports-voice-actor.jpg"> </div>
+                <div>
+                    <a class="btn" href="index.html" role="button">Home</a>
+                    <a class="btn" href="Champions.html" role="button">Champions</a>
+                    <a class="btn" href="Items.html" role="button">Items</a>
+                </div>
+                <div>
+                    <a class="btn" href="Login.html" role="button">Login</a>
+                </div>
+            </section>
+            <section class="d-flex f-grow-1 bg-light">
+                <div class="container">
+                    <h5 class="guide-section-title mt-5 mb-3">Item List</h5>
+                    <table class="guide-items-table w-100 table-bordered">
+                        <tr>
+                            <th class="pl-2">Name</th>
+                            <th class="d-none d-md-table-cell">Description</th>
+                            <th class="combination">Combination</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <span>B.F. Sword</span>
+                                    <div class="d-md-none mt-2 text-gray">+15 Attack Damage</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +15 Attack Damage
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <span>Recurve Bow</span>
+                                    <div class="d-md-none mt-2 text-gray">+15% Attack Speed</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +15% Attack Speed
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <span>Chain Vest</span>
+                                    <div class="d-md-none mt-2 text-gray">+25 Armor</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +25 Armor
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <span>Negatron Cloak</span>
+                                    <div class="d-md-none mt-2 text-gray">+25 Magic Resist</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +25 Magic Resist
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                    <span>Needlessly Large Rod</span>
+                                    <div class="d-md-none mt-2 text-gray">+15% Spell Power</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +15% Spell Power
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                    <span>Tear of the Goddess</span>
+                                    <div class="d-md-none mt-2 text-gray">+15 Mana</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +15 Mana
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                    <span>Giant's Belt</span>
+                                    <div class="d-md-none mt-2 text-gray">+200 Health</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +200 Health
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                    <span>Spatula</span>
+                                    <div class="d-md-none mt-2 text-gray">You will get a special ability</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    You will get a special ability
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                    <span>Sparring Gloves</span>
+                                    <div class="d-md-none mt-2 text-gray">+10% Critical Strike Chance, +10% Dodge Chance</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    +10% Critical Strike Chance, +10% Dodge Chance
+                                </td>
+                                <td class="combination">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3072.png" alt="Bloodthirster" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/10" data-original-title="" title="">
+                                    <span>Bloodthirster</span>
+                                    <div class="d-md-none mt-2 text-gray">Basic attacks heal the holder for 40% of the damage dealt.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Basic attacks heal the holder for 40% of the damage dealt.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/DragonsClaw.png" alt="Dragon's Claw" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/13" data-original-title="" title="">
+                                    <span>Dragon's Claw</span>
+                                    <div class="d-md-none mt-2 text-gray">Reduces incoming magic damage by 60%</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Reduces incoming magic damage by 60%
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ForceOfNature.png" alt="Force of Nature" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/14" data-original-title="" title="">
+                                    <span>Force of Nature</span>
+                                    <div class="d-md-none mt-2 text-gray">Wearer's team gains +1 maximum team size.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Wearer's team gains +1 maximum team size.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3110.png" alt="Frozen Heart" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/15" data-original-title="" title="">
+                                    <span>Frozen Heart</span>
+                                    <div class="d-md-none mt-2 text-gray">Reduces tha Attack Speed of nearby enemies by 50%. Each Frozen Heart a champion carries beyond the first increases the radius of this effect.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Reduces tha Attack Speed of nearby enemies by 50%. Each Frozen Heart a champion carries beyond the first increases the radius of this effect.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="<div class=&quot;font-size-12 text-left py-1&quot;>
+                                         <p class=&quot;text-yellow mb-1&quot;>Chain Vest</p>
+                                         <div>
+                                         +25 Armor
+                                         </div>
+
+
+                                         </div>
+                                         " title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3026.png" alt="Guardian Angel" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/17" data-original-title="" title="">
+                                    <span>Guardian Angel</span>
+                                    <div class="d-md-none mt-2 text-gray">Prevents the wearer's first death, placing them in stasis instead. After 2 seconds, they return with 400 Health and shed all negative effects.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Prevents the wearer's first death, placing them in stasis instead. After 2 seconds, they return with 400 Health and shed all negative effects.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3124.png" alt="Guinsoo's Rageblade" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/18" data-original-title="" title="">
+                                    <span>Guinsoo's Rageblade</span>
+                                    <div class="d-md-none mt-2 text-gray">Basic Attacks grant +6% bonus Attack Speed for the rest of combat. This effect can stack any number of times.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Basic Attacks grant +6% bonus Attack Speed for the rest of combat. This effect can stack any number of times.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3146.png" alt="Hextech Gunblade" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/19" data-original-title="" title="">
+                                    <span>Hextech Gunblade</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder's spells heal them for 33% of the damage dealt. Excess healing fuels a shield that protects the holder against up to 400 damage.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder's spells heal them for 33% of the damage dealt. Excess healing fuels a shield that protects the holder against up to 400 damage.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="<div class=&quot;font-size-12 text-left py-1&quot;>
+                                         <p class=&quot;text-yellow mb-1&quot;>B.F. Sword</p>
+                                         <div>
+                                         +15 Attack Damage
+                                         </div>
+
+
+                                         </div>
+                                         " title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3031.png" alt="Infinity Edge" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/21" data-original-title="" title="">
+                                    <span>Infinity Edge</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] Grants 75% Critical Strike Chance (including components). Each point of Critical Strike Chance above 100% becomes +1% Critical Strike Damage.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] Grants 75% Critical Strike Chance (including components). Each point of Critical Strike Chance above 100% becomes +1% Critical Strike Damage.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/IonicSpark.png" alt="Ionic Spark" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/22" data-original-title="" title="">
+                                    <span>Ionic Spark</span>
+                                    <div class="d-md-none mt-2 text-gray">Enemies within 2 hexes have their Magic Resist reduced by 40% (does not stack). When they cast a spell, they are zapped taking magic damage equal to 225% of their max Mana.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Enemies within 2 hexes have their Magic Resist reduced by 40% (does not stack). When they cast a spell, they are zapped taking magic damage equal to 225% of their max Mana.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3190.png" alt="Locket of the Iron Solari" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/24" data-original-title="" title="">
+                                    <span>Locket of the Iron Solari</span>
+                                    <div class="d-md-none mt-2 text-gray">When combat begins, the wearer and all allies within 2 hexes in the same row gain a shield that blocks 300 / 375 / 500 / 800 ★ damage for 8 seconds.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When combat begins, the wearer and all allies within 2 hexes in the same row gain a shield that blocks 300 / 375 / 500 / 800 ★ damage for 8 seconds.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3285.png" alt="Luden's Echo" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/25" data-original-title="" title="">
+                                    <span>Luden's Echo</span>
+                                    <div class="d-md-none mt-2 text-gray">When the holder casts their spell, the first target dealt magic damage and up to 3 nearby enemies are dealt an additional 180 magic damage, plus 180 if they are crowd-controlled.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When the holder casts their spell, the first target dealt magic damage and up to 3 nearby enemies are dealt an additional 180 magic damage, plus 180 if they are crowd-controlled.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3165.png" alt="Morellonomicon" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/26" data-original-title="" title="">
+                                    <span>Morellonomicon</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] When the holder deals magic damage with their spell, they burn the target, dealing 25% of the target's maximum Health as true damage over 10 seconds, and reducing healing by 50% for the duration of the burn.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] When the holder deals magic damage with their spell, they burn the target, dealing 25% of the target's maximum Health as true damage over 10 seconds, and reducing healing by 50% for the duration of the burn.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="<div class=&quot;font-size-12 text-left py-1&quot;>
+                                         <p class=&quot;text-yellow mb-1&quot;>Needlessly Large Rod</p>
+                                         <div>
+                                         +15% Spell Power
+                                         </div>
+
+
+                                         </div>
+                                         " title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3089.png" alt="Rabadon's Deathcap" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/28" data-original-title="" title="">
+                                    <span>Rabadon's Deathcap</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder gains 50 additional Spell Power.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder gains 50 additional Spell Power.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3094.png" alt="Rapid Firecannon" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/29" data-original-title="" title="">
+                                    <span>Rapid Firecannon</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder gains 200% Attack Range, and their Basic Attacks can’t miss.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder gains 200% Attack Range, and their Basic Attacks can’t miss.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3107.png" alt="Redemption" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/31" data-original-title="" title="">
+                                    <span>Redemption</span>
+                                    <div class="d-md-none mt-2 text-gray">When the wearer dies, allies are healed for 800 Health.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When the wearer dies, allies are healed for 800 Health.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3085.png" alt="Runaan's Hurricane" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/32" data-original-title="" title="">
+                                    <span>Runaan's Hurricane</span>
+                                    <div class="d-md-none mt-2 text-gray">Basic Attacks fire a bolt at another nearby enemy, dealing 90% of the wearer's Attack Damage and applying on-hit effects. These bolts can critical strike.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Basic Attacks fire a bolt at another nearby enemy, dealing 90% of the wearer's Attack Damage and applying on-hit effects. These bolts can critical strike.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3161.png" alt="Spear of Shojin" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/34" data-original-title="" title="">
+                                    <span>Spear of Shojin</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder's basic attacks restore 5 Mana on-hit.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder's basic attacks restore 5 Mana on-hit.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3087.png" alt="Statikk Shiv" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/35" data-original-title="" title="">
+                                    <span>Statikk Shiv</span>
+                                    <div class="d-md-none mt-2 text-gray">Every third Basic Attack from the wearer deals 80 magic damage to 3/4/5 ★ enemies, and 240 true damage if they are shielded.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Every third Basic Attack from the wearer deals 80 magic damage to 3/4/5 ★ enemies, and 240 true damage if they are shielded.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3083.png" alt="Warmog's Armor" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/40" data-original-title="" title="">
+                                    <span>Warmog's Armor</span>
+                                    <div class="d-md-none mt-2 text-gray">Grants 1000 bonus Health (including components).</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Grants 1000 bonus Health (including components).
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ZekesHerald.png" alt="Zeke's Herald" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/43" data-original-title="" title="">
+                                    <span>Zeke's Herald</span>
+                                    <div class="d-md-none mt-2 text-gray">When combat begins, the wearer and all allies within 1 hex in the same row gain +35% Attack Speed for the rest of combat.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When combat begins, the wearer and all allies within 1 hex in the same row gain +35% Attack Speed for the rest of combat.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="<div class=&quot;font-size-12 text-left py-1&quot;>
+                                         <p class=&quot;text-yellow mb-1&quot;>Giant&amp;#039;s Belt</p>
+                                         <div>
+                                         +200 Health
+                                         </div>
+
+
+                                         </div>
+                                         " title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Zephyr.png" alt="Zephyr" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/44" data-original-title="" title="">
+                                    <span>Zephyr</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] When combat begins, the wearer summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] When combat begins, the wearer summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ThiefsGloves.png" alt="Thief's Gloves" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/46" data-original-title="" title="">
+                                    <span>Thief's Gloves</span>
+                                    <div class="d-md-none mt-2 text-gray">At the beginning of each planning phase, the wearer equip 2 temporary items. Temporary items increase in power based on your player level. [Consumes Three item Slots]</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    At the beginning of each planning phase, the wearer equip 2 temporary items. Temporary items increase in power based on your player level. [Consumes Three item Slots]
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/HandofJustice.png" alt="Hand of Justice" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/47" data-original-title="" title="">
+                                    <span>Hand of Justice</span>
+                                    <div class="d-md-none mt-2 text-gray">At the begining of each planning phase, the wearer gains one of the following: Basic attacks and spells deal +45% Damage / Basic attacks and spells heal for 45% of damage dealt.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    At the begining of each planning phase, the wearer gains one of the following: Basic attacks and spells deal +45% Damage / Basic attacks and spells heal for 45% of damage dealt.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ArcaneGauntlet.png" alt="Jeweled Gauntlet" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/48" data-original-title="" title="">
+                                    <span>Jeweled Gauntlet</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder’s spells can cause critical hits, and holder gains +40% bonus critical strike damage.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder’s spells can cause critical hits, and holder gains +40% bonus critical strike damage.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Quicksilver.png" alt="Quicksilver" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/49" data-original-title="" title="">
+                                    <span>Quicksilver</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The wearer is immune to crowd control for the first 10 seconds of combat.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The wearer is immune to crowd control for the first 10 seconds of combat.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Backhand.png" alt="Trap Claw" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/51" data-original-title="" title="">
+                                    <span>Trap Claw</span>
+                                    <div class="d-md-none mt-2 text-gray">Blocks the first enemy spell that hits the wearer, and stuns the spell's caster for 4 seconds.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Blocks the first enemy spell that hits the wearer, and stuns the spell's caster for 4 seconds.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/LordsEdge.png" alt="Deathblade" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/54" data-original-title="" title="">
+                                    <span>Deathblade</span>
+                                    <div class="d-md-none mt-2 text-gray">Contributing to a kill grants the holder +20 Attack Damage for the rest of combat. This effect can stack any number of times (starting at 1).</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Contributing to a kill grants the holder +20 Attack Damage for the rest of combat. This effect can stack any number of times (starting at 1).
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/GiantSlayer.png" alt="Giant Slayer" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/55" data-original-title="" title="">
+                                    <span>Giant Slayer</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder's spells and basic attacks do 10% bonus damage. If the target has more than 1750 maximum Health, the bonus increases to 90%.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder's spells and basic attacks do 10% bonus damage. If the target has more than 1750 maximum Health, the bonus increases to 90%.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3033.png" alt="Last Whisper" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/63" data-original-title="" title="">
+                                    <span>Last Whisper</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] When the wearer inflicts a critical hit, the target's Armor is reduced by 80% for 3 seconds. This effect does not stack.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] When the wearer inflicts a critical hit, the target's Armor is reduced by 80% for 3 seconds. This effect does not stack.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3076.png" alt="Bramble Vest" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/64" data-original-title="" title="">
+                                    <span>Bramble Vest</span>
+                                    <div class="d-md-none mt-2 text-gray">Negates bonus damage from incoming critical hits. On being hit by a Basic Attack, deal 80/100/150 ★ magic damage to all nearby enemies (once every 2.5 seconds).</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    Negates bonus damage from incoming critical hits. On being hit by a Basic Attack, deal 80/100/150 ★ magic damage to all nearby enemies (once every 2.5 seconds).
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/TitansResolve.png" alt="Titan’s Resolve" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/65" data-original-title="" title="">
+                                    <span>Titan’s Resolve</span>
+                                    <div class="d-md-none mt-2 text-gray">When the wearer takes damage or inflicts a critical hit, they gain a 2% stacking damage bonus. Stacks up to 25 times, at which point the wearer gains 25 Armor and Magic Resistance, and increases in size.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When the wearer takes damage or inflicts a critical hit, they gain a 2% stacking damage bonus. Stacks up to 25 times, at which point the wearer gains 25 Armor and Magic Resistance, and increases in size.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ZzRotPortal.png" alt="Zz'Rot Portal" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/67" data-original-title="" title="">
+                                    <span>Zz'Rot Portal</span>
+                                    <div class="d-md-none mt-2 text-gray">At the start of combat, the wearer taunts all nearby enemies for 1 second. When the wearer dies, a Construct with 1500/2250/3000 ★ Health aries and taunts all nearby enemies again.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    At the start of combat, the wearer taunts all nearby enemies for 1 second. When the wearer dies, a Construct with 1500/2250/3000 ★ Health aries and taunts all nearby enemies again.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Shroud.png" alt="Shroud of Stillness" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/70" data-original-title="" title="">
+                                    <span>Shroud of Stillness</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 33% until they cast.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 33% until they cast.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ChaliceOfPower2.png" alt="Chalice of Power" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/71" data-original-title="" title="">
+                                    <span>Chalice of Power</span>
+                                    <div class="d-md-none mt-2 text-gray">When combat begins, the wearer and all allies within 1 hex in the same row gain 35 Spell Power for the rest of combat.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    When combat begins, the wearer and all allies within 1 hex in the same row gain 35 Spell Power for the rest of combat.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BlueBuff.png" alt="Blue Buff" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/78" data-original-title="" title="">
+                                    <span>Blue Buff</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] After casting their spell, the wearer's Mana is set to 20.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] After casting their spell, the wearer's Mana is set to 20.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/gargoylestoneplate_6254.png" alt="Gargoyle Stoneplate" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/79" data-original-title="" title="">
+                                    <span>Gargoyle Stoneplate</span>
+                                    <div class="d-md-none mt-2 text-gray">The holder gains 15 Armor and 15 Magic Resist for each enemy targeting them.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    The holder gains 15 Armor and 15 Magic Resist for each enemy targeting them.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/SunfireCape.png" alt="Sunfire Cape" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/80" data-original-title="" title="">
+                                    <span>Sunfire Cape</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] At start of combat, and every 2 seconds thereafter, a random enemy within 2 hexes is burned for 25% of their maximum health over 10 seconds. Any healing they receive is reduced by 50%.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] At start of combat, and every 2 seconds thereafter, a random enemy within 2 hexes is burned for 25% of their maximum health over 10 seconds. Any healing they receive is reduced by 50%.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/VanguardsCuirass.png" alt="Vanguard's Cuirass" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/81" data-original-title="" title="">
+                                    <span>Vanguard's Cuirass</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Vanguard trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Vanguard trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1031.png" alt="Chain Vest" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/3" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/YoumuusGhostblade.png" alt="Youmuu's Ghostblade" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/82" data-original-title="" title="">
+                                    <span>Youmuu's Ghostblade</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The wearer gains the Assassin trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The wearer gains the Assassin trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/BrawlersGloves.png" alt="Sparring Gloves" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/45" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/WarlordsBanner2.png" alt="Warlord's Banner" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/83" data-original-title="" title="">
+                                    <span>Warlord's Banner</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The wearer gains the Warlord trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The wearer gains the Warlord trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1011.png" alt="Giant's Belt" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/7" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/ElderwoodHeirloom.png" alt="Elderwood Sprout" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/84" data-original-title="" title="">
+                                    <span>Elderwood Sprout</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Elderwood trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Elderwood trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1057.png" alt="Negatron Cloak" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/4" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/DuelistsZeal.png" alt="Duelist's Zeal" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/85" data-original-title="" title="">
+                                    <span>Duelist's Zeal</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Duelist trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Duelist trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1043.png" alt="Recurve Bow" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/2" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/mantleofdusk_6931.png" alt="Aspect of Dusk" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/86" data-original-title="" title="">
+                                    <span>Aspect of Dusk</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Dusk trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Dusk trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1058.png" alt="Needlessly Large Rod" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/5" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/MagesCap.png" alt="Mage's Cap" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/87" data-original-title="" title="">
+                                    <span>Mage's Cap</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Mage trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Mage trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/3070.png" alt="Tear of the Goddess" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/6" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2">
+                                    <img src="//cdn.lolchess.gg/images/tft/item/SwordoftheDivine2.png" alt="Sword of the Divine" width="32" class="mr-1" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/89" data-original-title="" title="">
+                                    <span>Sword of the Divine</span>
+                                    <div class="d-md-none mt-2 text-gray">[Unique] The holder gains the Divine trait.</div>
+                                </td>
+                                <td class="d-none d-md-table-cell desc">
+                                    [Unique] The holder gains the Divine trait.
+                                </td>
+                                <td class="combination">
+
+                                    <img src="//ddragon.leagueoflegends.com/cdn/10.22.1/img/item/1038.png" alt="B.F. Sword" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/1" data-original-title="" title="">
+                                    <i class="fa fa-plus mr-1 text-light-gray align-middle"></i>
+                                    <img src="//cdn.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" width="24" class="mr-1 align-middle" data-toggle="tooltip" data-tooltip-url="https://lolchess.gg/tooltip/item/set4/8" data-original-title="" title="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="d-flex f-grow-0 bg-info align-items-center">
+                <p>KMOOC HTML5 gyakorlás | Szerencsés Dénes | 2020</p>
+            </section>
+        </div>
+    </body>
+</html>
